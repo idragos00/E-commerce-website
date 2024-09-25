@@ -21,6 +21,8 @@ p {
   margin: 0;
 }
 
+//main-page
+
 //navbar
 
 .navbar {
@@ -194,6 +196,56 @@ p {
       height: 1px;
       background-color: #d9d9d9;
       margin: 30px;
+    }
+  }
+}
+
+//shop-page
+
+//header
+
+.header-shop {
+  .banner {
+    position: relative;
+    background-image: url(imgs/banner-shop.png);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    // top: 100px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .banner-text {
+    position: absolute;
+    top: 280px;
+    left: 57em;
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 72px;
+      text-align: left;
+
+      color: #000000;
+    }
+    .home-link {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: #000000;
+    }
+    .shop-link {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: left;
+      color: #000000;
+    }
+    i {
+      padding: 0 10px;
     }
   }
 }

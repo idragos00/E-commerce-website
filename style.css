@@ -149,3 +149,40 @@ p {
   height: 1px;
   background-color: #d9d9d9;
   margin: 30px; }
+
+.header-shop .banner {
+  position: relative;
+  background-image: url(imgs/banner-shop.png);
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  gap: 0px;
+  opacity: 0px; }
+
+.header-shop .banner-text {
+  position: absolute;
+  top: 280px;
+  left: 57em; }
+  .header-shop .banner-text h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: left;
+    color: #000000; }
+  .header-shop .banner-text .home-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #000000; }
+  .header-shop .banner-text .shop-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    color: #000000; }
+  .header-shop .banner-text i {
+    padding: 0 10px; }
