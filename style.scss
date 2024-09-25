@@ -91,6 +91,8 @@ p {
 
 .our-products {
   #our-products-content {
+    margin-bottom: 120px;
+
     h2 {
       font-family: "Poppins", sans-serif;
       font-size: 40px;
@@ -98,6 +100,50 @@ p {
       line-height: 48px;
       text-align: center;
       padding: 30px;
+      margin-top: 50px;
+      margin-bottom: 32px;
+    }
+    img {
+      width: 285px;
+      height: 301px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .cardbox-content {
+      background-color: #f4f5f7;
+      padding: 10px;
+      width: 285px;
+      height: 145px;
+      top: 301px;
+      gap: 0px;
+      opacity: 0px;
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28.8px;
+        text-align: left;
+        color: #3a3a3a;
+        margin-bottom: 10px;
+      }
+      .product-description {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        color: #898989;
+        margin-bottom: 10px;
+      }
+      .product-price {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+        color: #3a3a3a;
+      }
     }
   }
 }
