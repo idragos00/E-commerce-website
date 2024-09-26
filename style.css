@@ -24,8 +24,8 @@ p {
   .navbar #navbar-content {
     display: inline-block; }
     .navbar #navbar-content .logo {
-      width: 185px px;
-      height: 41px px;
+      width: 185px;
+      height: 41px;
       top: 29px;
       left: 54px;
       gap: 5px;
@@ -37,7 +37,7 @@ p {
         font-family: "Poppins", sans-serif;
         font-size: 16px;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 50px;
         text-align: left;
         color: #000000;
         text-decoration: none;
@@ -50,6 +50,7 @@ p {
       left: 1.67px;
       gap: 0px;
       opacity: 0px;
+      line-height: 50px;
       margin-left: 600px; }
 
 .header .banner {
@@ -210,43 +211,50 @@ p {
       margin: 30px; }
 
 .header-shop .banner {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(imgs/banner-shop.png);
   background-size: cover;
   width: 100%;
   height: 400px;
   gap: 0px;
   opacity: 0px; }
-
-.header-shop .banner-text {
-  position: absolute;
-  top: 200px;
-  left: 57em; }
-  .header-shop .banner-text h1 {
+  .header-shop .banner h1 {
     font-family: "Poppins", sans-serif;
     font-size: 48px;
     font-weight: 500;
     line-height: 72px;
     text-align: left;
+    margin-top: 180px;
     color: #000000; }
-  .header-shop .banner-text .home-link {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
-    color: #000000; }
-  .header-shop .banner-text .shop-link {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    color: #000000; }
-  .header-shop .banner-text i {
-    padding: 0 10px; }
 
-.header-shop .banner-results {
+.header-shop .header-shop-subtext {
+  top: 295px;
+  left: 660px;
+  gap: 0px;
+  opacity: 0px; }
+
+.header-shop .home-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000; }
+
+.header-shop .shop-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #000000; }
+
+.header-shop i {
+  padding: 0 10px; }
+
+.banner-results {
   display: flex;
   align-items: center;
   width: 100%;
@@ -255,9 +263,9 @@ p {
   gap: 0px;
   opacity: 0px;
   background-color: #f9f1e7; }
-  .header-shop .banner-results .border-left {
+  .banner-results .border-left {
     border: 1px solid black; }
-  .header-shop .banner-results p {
+  .banner-results p {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -313,3 +321,104 @@ p {
       line-height: 30px;
       text-align: left;
       color: #3a3a3a; }
+
+.checkout-header .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imgs/banner-shop.png);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  top: 100px;
+  gap: 0px;
+  opacity: 0px; }
+
+.checkout-header img {
+  width: 77px;
+  height: 77px;
+  margin-top: 125px; }
+
+.checkout-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: left;
+  align-items: center;
+  width: 233px;
+  height: 72px;
+  top: 222px;
+  left: 604px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000; }
+
+.checkout-header .checkout-shop-subtext {
+  top: 295px;
+  left: 660px;
+  gap: 0px;
+  opacity: 0px; }
+
+.checkout-header .home-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  width: 48px;
+  height: 24px;
+  top: 295px;
+  left: 660px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000; }
+
+.checkout-header .checkout-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  width: 77px;
+  height: 24px;
+  top: 295px;
+  left: 740px;
+  gap: 0px;
+  opacity: 0px;
+  color: #000000; }
+
+.checkout-header i {
+  padding: 0 10px; }
+
+.billing #billing-content .billing-form .name-row {
+  display: flex;
+  gap: 10px; }
+  .billing #billing-content .billing-form .name-row .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+
+.billing #billing-content .billing-form input {
+  display: block;
+  border: 1px solid #9f9f9f; }
+
+.billing #billing-content .billing-form .name {
+  width: 211px;
+  height: 75px;
+  top: 650px;
+  left: 176px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px; }
+
+.billing #billing-content .billing-form .address {
+  width: 453px;
+  height: 75px;
+  top: 807px;
+  left: 176px;
+  gap: 0px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px; }
