@@ -171,6 +171,26 @@ p {
   border-top: 1px solid #d9d9d9; }
   .contact #contact-content {
     margin-top: 25px; }
+    .contact #contact-content form input {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      border: 0;
+      border-bottom: 1px solid #000000;
+      color: #9f9f9f; }
+    .contact #contact-content form button {
+      border: 0;
+      border-bottom: 1px solid #000000;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      background-color: #ffffff;
+      color: #000000;
+      margin-left: 30px; }
     .contact #contact-content h2 {
       font-family: "Poppins", sans-serif;
       font-size: 24px;
@@ -521,6 +541,19 @@ p {
         line-height: 24px;
         text-align: justified;
         margin-bottom: 39px; }
+      .billing #billing-content .billing-product-cost-left button {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        background-color: #fff;
+        margin-left: 150px;
+        padding: 17px 100px;
+        border-radius: 15px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #000000; }
     .billing #billing-content .break-line {
       border: 1px solid #d9d9d9; }
     .billing #billing-content .billing-product-cost-right p:first-of-type {
