@@ -465,12 +465,64 @@ p {
       .billing #billing-content .billing-product-cost .billing-flex-container {
         display: flex;
         gap: 50px; }
+        .billing #billing-content .billing-product-cost .billing-flex-container span {
+          margin-bottom: 25px; }
         .billing #billing-content .billing-product-cost .billing-flex-container .billing-left-flex {
           display: flex;
           flex-direction: column; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-left-flex span:first-of-type {
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-left-flex span:nth-of-type(2) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-left-flex span:nth-of-type(3) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-left-flex span:nth-of-type(4) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left; }
         .billing #billing-content .billing-product-cost .billing-flex-container .billing-right-flex {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          margin-left: 315px; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-right-flex span:first-of-type {
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-right-flex span:nth-of-type(2) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-right-flex span:nth-of-type(3) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left; }
+          .billing #billing-content .billing-product-cost .billing-flex-container .billing-right-flex span:nth-of-type(4) {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: left;
+            color: #b88e2f; }
       .billing #billing-content .billing-product-cost button {
         font-family: "Poppins", sans-serif;
         font-size: 20px;

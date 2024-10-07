@@ -602,29 +602,74 @@ body {
       .billing-flex-container {
         display: flex;
         gap: 50px;
+        span {
+          margin-bottom: 25px;
+        }
 
         .billing-left-flex {
           display: flex;
           flex-direction: column;
           span:first-of-type {
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: left;
           }
           span:nth-of-type(2) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
           }
           span:nth-of-type(3) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
           }
           span:nth-of-type(4) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
           }
         }
         .billing-right-flex {
           display: flex;
           flex-direction: column;
+          margin-left: 315px;
           span:first-of-type {
+            font-family: "Poppins", sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: left;
           }
           span:nth-of-type(2) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
           }
           span:nth-of-type(3) {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
           }
           span:nth-of-type(4) {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: left;
+            color: #b88e2f;
           }
         }
       }
