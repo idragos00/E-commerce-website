@@ -128,11 +128,9 @@ p {
     line-height: 48px;
     text-align: center;
     padding: 30px;
-    margin-top: 50px;
-    margin-bottom: 32px; }
+    margin-top: 50px; }
   .our-products #our-products-content .product-card {
-    margin-bottom: 32px;
-    margin-right: 32px; }
+    margin: 63px 32px 32px 0; }
     .our-products #our-products-content .product-card img {
       width: 285px;
       height: 301px;
