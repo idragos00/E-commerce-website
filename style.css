@@ -536,38 +536,26 @@ p {
         border: 1px 0px 0px 0px;
         opacity: 0px;
         border: 1px solid #000000; }
+      .billing #billing-content .billing-product-cost p:first-of-type {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 60px; }
+      .billing #billing-content .billing-product-cost p:nth-of-type(2) {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: justified;
+        margin-bottom: 40px; }
+        .billing #billing-content .billing-product-cost p:nth-of-type(2) span {
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: justified; }
     .billing #billing-content .break-line {
-      border: 1px solid #d9d9d9; }
-    .billing #billing-content .billing-product-cost-right p:first-of-type {
-      font-family: "Poppins", sans-serif;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 36px;
-      text-align: left;
-      color: #000000;
-      margin-bottom: 15px; }
-    .billing #billing-content .billing-product-cost-right p:nth-of-type(2) {
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      color: #000000;
-      margin-bottom: 15px; }
-    .billing #billing-content .billing-product-cost-right p:nth-of-type(3) {
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      color: #000000;
-      margin-bottom: 15px; }
-    .billing #billing-content .billing-product-cost-right p:nth-of-type(4) {
-      font-family: "Poppins", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      color: #000000;
-      margin-bottom: 15px;
-      color: #b88e2f; }
+      border: 1px solid #d9d9d9;
+      margin: 33px 0 22px 0; }
