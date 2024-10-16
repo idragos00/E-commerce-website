@@ -64,7 +64,10 @@ function displayProducts(products) {
             <p class="product-description">${customDescription}</p>
             <p class="product-price">Rp ${product.price}</p>
           </div>
-        </a>
+          </a>
+          <div class="add-to-cart">
+           <button class="add-to-cart-btn" data-id="${product.id}">Add To Cart</button>
+         </div>
       </div>
     `;
 

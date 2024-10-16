@@ -169,10 +169,34 @@ body {
 
 .our-products {
   #our-products-content {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 120px;
 
     a {
       text-decoration: none;
+    }
+
+    .add-to-cart {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .add-to-cart-btn {
+      background-color: #fff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* Change background color on hover */
+    .add-to-cart-btn:hover {
+      background-color: #b88e2f; /* Darker shade on hover */
     }
 
     h2 {

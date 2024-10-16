@@ -120,9 +120,28 @@ p {
       color: #ffffff; }
 
 .our-products #our-products-content {
-  margin-bottom: 120px; }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  /* Change background color on hover */ }
   .our-products #our-products-content a {
     text-decoration: none; }
+  .our-products #our-products-content .add-to-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; }
+  .our-products #our-products-content .add-to-cart-btn {
+    background-color: #fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+  .our-products #our-products-content .add-to-cart-btn:hover {
+    background-color: #b88e2f;
+    /* Darker shade on hover */ }
   .our-products #our-products-content h2 {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
