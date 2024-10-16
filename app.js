@@ -38,17 +38,20 @@ function loadProducts() {
     .catch((error) => console.error('Error loading products:', error));
 }
 
-// Function to display products on the page
+// Function to display only the first 8 products
 function displayProducts(products) {
   const productsContainer = document.querySelector('#our-products-content .row');
 
-  // Clear any existing products
+  // Clear any existing products to avoid duplication
   productsContainer.innerHTML = '';
 
-  products.forEach((product, index) => {
+  // Limit the number of products to 8
+  const limitedProducts = products.slice(0, 8);
+
+  limitedProducts.forEach((product, index) => {
     // Customize image and description
     let customTitle = `Syltherine`;
-    let customImage = `imgs/image ${index + 1}.png`; // Custom images you have locally
+    let customImage = `imgs/image-${index + 1}.png`; // Custom images you have locally
     let customDescription = `Stylish cafe chair ${index + 1}.`;
 
     // Create the product card HTML
@@ -72,6 +75,11 @@ function displayProducts(products) {
   addCartButtonListeners();
 }
 
+// Load products and limit to 8 when the page loads
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchProducts(); // Call to the API or function that fetches the products
+});
 
 // Function to add item to the cart
 function addToCart(productName, productPrice) {
