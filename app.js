@@ -1,3 +1,32 @@
+const customProducts = [
+  {
+    title: 'Luxury Sofa',
+    description: 'A comfortable and stylish luxury sofa.',
+    price: 2500000,
+    image: 'imgs/sofa.png', // Path to your custom image
+  },
+  {
+    title: 'Modern Coffee Table',
+    description: 'A sleek, modern coffee table for your living room.',
+    price: 1500000,
+    image: 'imgs/coffee-table.png',
+  },
+  {
+    title: 'Elegant Chair',
+    description: 'An elegant chair for dining or working.',
+    price: 1200000,
+    image: 'imgs/chair.png',
+  },
+  {
+    title: 'Wooden Desk',
+    description: 'A wooden desk perfect for study or work.',
+    price: 3000000,
+    image: 'imgs/desk.png',
+  },
+];
+
+
+
 // Initialize an empty cart
 let cart = [];
 
@@ -16,14 +45,19 @@ function displayProducts(products) {
   // Clear any existing products
   productsContainer.innerHTML = '';
 
-  products.forEach((product) => {
+  products.forEach((product, index) => {
+    // Customize image and description
+    let customTitle = `Syltherine`;
+    let customImage = `imgs/image ${index + 1}.png`; // Custom images you have locally
+    let customDescription = `Stylish cafe chair ${index + 1}.`;
+
     // Create the product card HTML
     const productCard = `
       <div class="col product-card">
-        <img src="${product.image}" alt="${product.title}" />
+        <img src="${customImage}" alt="${product.title}" />
         <div class="cardbox-content">
-          <h3>${product.title}</h3>
-          <p class="product-description">${product.description.substring(0, 50)}...</p>
+          <h3>${customTitle}</h3>
+          <p class="product-description">${customDescription}</p>
           <p class="product-price">Rp ${product.price}</p>
           <button>Add To Cart</button>
         </div>
@@ -37,6 +71,7 @@ function displayProducts(products) {
   // Add event listeners for 'Add To Cart' buttons
   addCartButtonListeners();
 }
+
 
 // Function to add item to the cart
 function addToCart(productName, productPrice) {
