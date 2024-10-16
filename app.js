@@ -57,13 +57,14 @@ function displayProducts(products) {
     // Create the product card HTML
     const productCard = `
       <div class="col product-card">
-        <img src="${customImage}" alt="${product.title}" />
-        <div class="cardbox-content">
-          <h3>${customTitle}</h3>
-          <p class="product-description">${customDescription}</p>
-          <p class="product-price">Rp ${product.price}</p>
-          <button>Add To Cart</button>
-        </div>
+        <a href="single-product.html?id=${product.id}" class="product-link">
+          <img src="${customImage}" alt="${product.title}" />
+          <div class="cardbox-content">
+            <h3>${customTitle}</h3>
+            <p class="product-description">${customDescription}</p>
+            <p class="product-price">Rp ${product.price}</p>
+          </div>
+        </a>
       </div>
     `;
 
@@ -80,6 +81,20 @@ function displayProducts(products) {
 document.addEventListener('DOMContentLoaded', () => {
   fetchProducts(); // Call to the API or function that fetches the products
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadProducts(); // Call to load the initial products
+
+  // Add an event listener for the "Show More" button
+  const showMoreBtn = document.querySelector('#show-more-btn');
+  
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener('click', () => {
+      window.location.href = 'shop.html'; // Redirect to shop.html
+    });
+  }
+});
+
 
 // Function to add item to the cart
 function addToCart(productName, productPrice) {
