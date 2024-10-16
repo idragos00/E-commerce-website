@@ -131,16 +131,20 @@ p {
     justify-content: center;
     margin-top: 10px; }
   .our-products #our-products-content .add-to-cart-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
     background-color: #fff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s; }
   .our-products #our-products-content .add-to-cart-btn:hover {
-    background-color: #b88e2f;
+    background-color: #f9f1e7;
     /* Darker shade on hover */ }
   .our-products #our-products-content h2 {
     font-family: "Poppins", sans-serif;
@@ -682,6 +686,32 @@ p {
 .product-showcase {
   margin-top: 35px;
   margin-bottom: 75px; }
+  .product-showcase #product-showcase-content #product-image {
+    width: 423px;
+    height: 500px;
+    top: 246px;
+    left: 206px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #f9f1e7; }
+  .product-showcase #product-showcase-content .add-to-cart {
+    margin-top: 10px; }
+  .product-showcase #product-showcase-content .add-to-cart-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; }
+  .product-showcase #product-showcase-content .add-to-cart-btn:hover {
+    background-color: #f9f1e7; }
   .product-showcase #product-showcase-content h3 {
     font-family: "Poppins", sans-serif;
     font-size: 42px;
@@ -695,17 +725,6 @@ p {
     line-height: 36px;
     text-align: left;
     color: #9f9f9f; }
-  .product-showcase #product-showcase-content .product-image {
-    background-image: url(imgs/Asgaard-sofa-3.png);
-    background-size: cover;
-    width: 423px;
-    height: 500px;
-    top: 246px;
-    left: 206px;
-    gap: 0px;
-    border-radius: 10px 0px 0px 0px;
-    opacity: 0px;
-    background-color: #f9f1e7; }
   .product-showcase #product-showcase-content .customer-review {
     margin-bottom: 20px; }
     .product-showcase #product-showcase-content .customer-review img {

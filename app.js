@@ -99,6 +99,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Function to get the query parameter value by name
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Function to fetch and display the product details
+function loadProductDetails() {
+  const productId = getQueryParam('id'); // Get the product ID from the URL
+  
+  fetch(`https://fakestoreapi.com/products/${productId}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then((product) => {
+      // Customize the details you want to display
+      let customTitle = `Syltherine`; // Custom Title
+      let customImage = `imgs/image-${productId}.png`; // Custom Image
+      let customDescription = `Stylish cafe chair ${productId}.`; // Custom Description
+
+      // Populate the product showcase with product details
+      document.getElementById('product-image').src = customImage; // Set the product image
+      document.getElementById('product-title').textContent = customTitle; // Set the product title
+      document.getElementById('product-price').textContent = `Rs. ${product.price.toFixed(2)}`; // Set the product price
+      document.getElementById('product-description').textContent = customDescription; // Set the product description
+      document.getElementById('customer-reviews').textContent = `${product.rating.count} Customer Reviews`; // Set the customer reviews
+    })
+    .catch((error) => console.error('Error loading product details:', error));
+}
+
+// Load the product details when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', loadProductDetails);
+
+
 // Function to add item to the cart
 function addToCart(productName, productPrice) {
   // Create a product object
@@ -110,12 +147,47 @@ function addToCart(productName, productPrice) {
   // Add the product to the cart array
   cart.push(product);
 
+  localStorage.setItem('localCart', JSON.stringify(cart));
+
   // Update cart count
   updateCartCount();
 
   // Display message
   alert(`${productName} has been added to your cart.`);
 }
+
+// Function to load cart items from localStorage and display them
+function loadCartItems() {
+  const cartItems = JSON.parse(localStorage.getItem('localCart')) || []; // Retrieve and parse cart items
+
+  const billingProductList = document.getElementById('billing-product-list');
+
+  // Clear any existing items
+  billingProductList.innerHTML = '';
+
+  // Check if there are products in the cart
+  if (cartItems.length === 0) {
+    billingProductList.innerHTML = '<p>Your cart is empty.</p>'; // Display message if cart is empty
+    return;
+  }
+
+  // Loop through each item in the cart and create HTML elements for them
+  cartItems.forEach(item => {
+    const productRow = document.createElement('div');
+    productRow.classList.add('product-row');
+
+    productRow.innerHTML = `
+      <span>${item.name}</span>
+      <span>Rs. ${item.price.toFixed(2)}</span>
+    `;
+
+    billingProductList.appendChild(productRow); // Append product row to the list
+  });
+}
+
+// Load the cart items when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', loadCartItems);
+
 
 // Function to update the cart count displayed on the shopping cart icon
 function updateCartCount() {

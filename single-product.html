@@ -39,7 +39,7 @@
           <div class="col">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="main-page.html">Home</a>
               </li>
               <li>
                 <a href="shop.html">Shop</a>
@@ -76,31 +76,28 @@
       <div class="container" id="product-showcase-content">
         <div class="row">
           <div class="col">
-            <div class="product-image"></div>
+            <div class="product-image">
+              <img id="product-image" src="" alt="Product Image" />
+            </div>
           </div>
           <div class="col">
-            <h3>Asgaard sofa</h3>
-            <p class="price">Rs. 250,000.00</p>
+            <h3 id="product-title"></h3>
+            <p class="price" id="product-price"></p>
             <div class="customer-review">
               <img src="imgs/stars.png" alt="" />
-              <span>5 Customer Review</span>
+              <span id="customer-reviews">0 Customer Reviews</span>
             </div>
-            <p class="description">
-              Setting the bar as one of the loudest speakers in its class, the
-              Kilburn is a compact, stout-hearted hero with a well-balanced
-              audio which boasts a clear midrange and extended highs for a
-              sound.
-            </p>
+            <p class="description" id="product-description"></p>
             <div class="size-container">
               <p>Size</p>
               <button>M</button>
               <button>L</button>
               <button>XL</button>
             </div>
-
             <div class="add-to-cart">
-              <button></button>
-              <button>Add To Cart</button>
+              <button class="add-to-cart-btn" data-id="${product.id}">
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
