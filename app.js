@@ -3,7 +3,7 @@ const customProducts = [
     title: 'Luxury Sofa',
     description: 'A comfortable and stylish luxury sofa.',
     price: 2500000,
-    image: 'imgs/sofa.png', // Path to your custom image
+    image: 'imgs/sofa.png', 
   },
   {
     title: 'Modern Coffee Table',
@@ -38,18 +38,18 @@ function loadProducts() {
     .catch((error) => console.error('Error loading products:', error));
 }
 
-// Function to display only the first 8 products
+
 function displayProducts(products) {
   const productsContainer = document.querySelector('#our-products-content .row');
 
-  // Clear any existing products to avoid duplication
+  
   productsContainer.innerHTML = '';
 
-  // Limit the number of products to 8
+  
   const limitedProducts = products.slice(0, 8);
 
   limitedProducts.forEach((product, index) => {
-    // Customize image and description
+   
     let customTitle = `Syltherine`;
     let customImage = `imgs/image-${index + 1}.png`; // Custom images you have locally
     let customDescription = `Stylish cafe chair ${index + 1}.`;
@@ -71,24 +71,24 @@ function displayProducts(products) {
       </div>
     `;
 
-    // Add product card to the container
+    
     productsContainer.innerHTML += productCard;
   });
 
-  // Add event listeners for 'Add To Cart' buttons
+  
   addCartButtonListeners();
 }
 
-// Load products and limit to 8 when the page loads
+ 
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetchProducts(); // Call to the API or function that fetches the products
+  fetchProducts();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadProducts(); // Call to load the initial products
+  loadProducts(); 
 
-  // Add an event listener for the "Show More" button
+  
   const showMoreBtn = document.querySelector('#show-more-btn');
   
   if (showMoreBtn) {
@@ -99,13 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Function to get the query parameter value by name
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
 }
 
-// Function to fetch and display the product details
 function loadProductDetails() {
   const productId = getQueryParam('id'); // Get the product ID from the URL
   
@@ -117,17 +115,15 @@ function loadProductDetails() {
       return response.json();
     })
     .then((product) => {
-      // Customize the details you want to display
-      let customTitle = `Syltherine`; // Custom Title
-      let customImage = `imgs/image-${productId}.png`; // Custom Image
-      let customDescription = `Stylish cafe chair ${productId}.`; // Custom Description
+      let customTitle = `Syltherine`; 
+      let customImage = `imgs/image-${productId}.png`; 
+      let customDescription = `Stylish cafe chair ${productId}.`; 
 
-      // Populate the product showcase with product details
-      document.getElementById('product-image').src = customImage; // Set the product image
-      document.getElementById('product-title').textContent = customTitle; // Set the product title
-      document.getElementById('product-price').textContent = `Rs. ${product.price.toFixed(2)}`; // Set the product price
-      document.getElementById('product-description').textContent = customDescription; // Set the product description
-      document.getElementById('customer-reviews').textContent = `${product.rating.count} Customer Reviews`; // Set the customer reviews
+      document.getElementById('product-image').src = customImage; 
+      document.getElementById('product-title').textContent = customTitle; 
+      document.getElementById('product-price').textContent = `Rs. ${product.price.toFixed(2)}`; 
+      document.getElementById('product-description').textContent = customDescription; 
+      document.getElementById('customer-reviews').textContent = `${product.rating.count} Customer Reviews`; 
     })
     .catch((error) => console.error('Error loading product details:', error));
 }
